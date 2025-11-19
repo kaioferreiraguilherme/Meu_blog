@@ -1,70 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Como Criar Conteúdo Viral</title>
-    <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Como Criar Conteúdo Viral — Blog</title>
+  <meta name="description" content="Estratégias para aumentar o alcance do seu conteúdo." />
+  <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
-
-<header class="header">
-    <div class="logo">Blog MKT</div>
-    <nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><strong>Blog de</strong><span> Marketing</span></a>
+      <nav class="nav">
         <a href="../index.html">Home</a>
         <a href="../sobre.html">Sobre</a>
         <a href="../contato.html">Contato</a>
-    </nav>
-</header>
+      </nav>
+      <button class="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
 
-<section class="post-container">
+  <main class="container post-page">
+    <article class="post-card">
+      <h1>Como Criar Conteúdo Viral</h1>
+      <img class="post-img" src="../assets/conteudo-viral.jpg" alt="Conteúdo Viral">
+      <div class="post-content">
+        <p>Viralizar depende de emoção, formato e distribuição. Use headlines fortes, conte histórias e facilite o compartilhamento.</p>
 
-    <img src="../assets/conteudo-viral.jpg" class="post-banner" />
-
-    <h1 class="post-title">Como Criar Conteúdo Viral</h1>
-
-    <p class="post-content">
-        Criar conteúdo viral é o objetivo de toda marca que deseja alcançar mais pessoas
-        sem gastar muito com anúncios. Mas ao contrário do que muitos pensam, viralizar
-        não depende de sorte — existe técnica.
-        <br><br>
-        A seguir, você vai descobrir os pilares essenciais para criar conteúdos que
-        realmente chamam atenção e têm alto potencial de compartilhamento.
-        <br><br>
-
-        <strong>1. Use gatilhos emocionais</strong><br>
-        Conteúdos virais despertam emoções fortes, como:
+        <h3>Pilares para viralizar</h3>
         <ul>
-            <li>Felicidade</li>
-            <li>Inspiração</li>
-            <li>Surpresa</li>
-            <li>Identificação</li>
+          <li>Gatilhos emocionais (inspiração, surpresa)</li>
+          <li>Formato fácil de consumir (vídeo curto, carrossel)</li>
+          <li>Distribuição estratégica (timing + hashtags)</li>
         </ul>
 
-        <br>
-        <strong>2. Use headlines chamativas</strong><br>
-        O título é 80% do sucesso. Ele precisa gerar curiosidade e urgência.
+        <p><a class="btn" href="../index.html">← Voltar para Home</a></p>
+      </div>
+    </article>
+  </main>
 
-        <br><br>
-        <strong>3. Conte histórias</strong><br>
-        As pessoas se conectam com narrativas. Conteúdo com storytelling converte até 5x mais.
+  <footer class="site-footer">
+    <div class="container"><p>© <span id="year-post2"></span> Blog de Marketing Digital</p></div>
+  </footer>
 
-        <br><br>
-        <strong>4. Facilite o compartilhamento</strong><br>
-        Quanto mais simples o formato (reels, carrossel, frases curtas), maior o potencial viral.
-
-        <br><br>
-        <strong>Conclusão</strong><br>
-        Viralizar não é sorte. É estratégia. Combine emoção, história e distribuição, e seus
-        conteúdos terão muito mais alcance.
-    </p>
-
-</section>
-
-<footer class="footer">
-    <p>© 2025 Blog Marketing Digital – Todos os direitos reservados.</p>
-</footer>
-
+  <script>document.getElementById('year-post2').textContent = new Date().getFullYear();</script>
 </body>
 </html>
