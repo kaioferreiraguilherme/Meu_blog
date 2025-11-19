@@ -1,65 +1,51 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introdução ao Marketing Digital</title>
-    <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Introdução ao Marketing Digital — Blog</title>
+  <meta name="description" content="O que é marketing digital e por que ele importa." />
+  <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
-
-<header class="header">
-    <div class="logo">Blog MKT</div>
-    <nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><strong>Blog de</strong><span> Marketing</span></a>
+      <nav class="nav">
         <a href="../index.html">Home</a>
         <a href="../sobre.html">Sobre</a>
         <a href="../contato.html">Contato</a>
-    </nav>
-</header>
+      </nav>
+      <button class="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
 
-<section class="post-container">
+  <main class="container post-page">
+    <article class="post-card">
+      <h1>Introdução ao Marketing Digital</h1>
+      <img class="post-img" src="../assets/marketing-digital-banner.jpg" alt="Marketing Digital">
+      <div class="post-content">
+        <p>Marketing digital é o conjunto de estratégias para promover produtos, serviços e marcas no ambiente online. Ele engloba SEO, redes sociais, email marketing, anúncios pagos e muito mais.</p>
 
-    <img src="../assets/marketing-digital-banner.jpg" class="post-banner" />
-
-    <h1 class="post-title">Introdução ao Marketing Digital</h1>
-
-    <p class="post-content">
-        O marketing digital revolucionou a maneira como empresas se conectam com o público.
-        Diferente do marketing tradicional, ele permite estratégias segmentadas, mensuráveis
-        e muito mais eficientes.
-        <br><br>
-        Neste artigo, você aprenderá o que é marketing digital, como ele funciona e por que
-        ele é essencial nos dias de hoje para qualquer negócio — pequeno ou grande.
-        <br><br>
-        <strong>O que é Marketing Digital?</strong><br>
-        Marketing digital é o conjunto de estratégias realizadas no ambiente online, com o
-        objetivo de atrair, engajar e converter clientes. Ele usa canais como:
+        <h3>Por que é importante?</h3>
         <ul>
-            <li>Redes sociais</li>
-            <li>Sites e blogs</li>
-            <li>Email marketing</li>
-            <li>Anúncios online</li>
-            <li>SEO (otimização para Google)</li>
+          <li>Alcança pessoas em escala</li>
+          <li>Permite análise de resultados em tempo real</li>
+          <li>Melhora a eficiência do investimento</li>
         </ul>
 
-        <br>
-        <strong>Por que ele é tão importante?</strong><br>
-        Porque hoje, mais de 70% das decisões de compra começam na internet. Se seu negócio
-        não está online, ele simplesmente não existe para a maioria das pessoas.
-        <br><br>
-        <strong>Conclusão</strong><br>
-        Marketing digital não é opcional. É obrigatório para quem deseja crescer, atrair
-        clientes e construir autoridade na internet.
-        <br><br>
-        Quer aprender mais? Explore nossos próximos artigos!
-    </p>
+        <h3>Como começar</h3>
+        <p>Defina objetivo, conheça seu público e escolha 1-2 canais para começar (ex.: Instagram e blog). Teste, meça e otimize.</p>
 
-</section>
+        <p><a class="btn" href="../index.html">← Voltar para Home</a></p>
+      </div>
+    </article>
+  </main>
 
-<footer class="footer">
-    <p>© 2025 Blog Marketing Digital – Todos os direitos reservados.</p>
-</footer>
+  <footer class="site-footer">
+    <div class="container"><p>© <span id="year-post"></span> Blog de Marketing Digital</p></div>
+  </footer>
 
+  <script>document.getElementById('year-post').textContent = new Date().getFullYear();</script>
 </body>
 </html>
