@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Blog de Marketing Digital</title>
-  <meta name="description" content="Dicas práticas de marketing digital: SEO, redes sociais, conteúdo e ferramentas." />
+  <title>Meu Blog — Marketing Digital</title>
+  <meta name="description" content="Guia de marketing digital: SEO, conteúdo, redes sociais e ferramentas." />
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><strong>Blog de</strong><span> Marketing</span></a>
+      <a class="brand" href="index.html"><strong>Meu</strong> Blog</a>
       <nav id="nav" class="nav">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
+        <a href="posts.html">Posts</a>
         <a href="sobre.html">Sobre</a>
         <a href="contato.html">Contato</a>
       </nav>
@@ -24,23 +24,49 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Marketing Digital com Estilo</h1>
-        <p>Dicas práticas de SEO, redes sociais, tráfego pago e ferramentas.</p>
+        <h1>Marketing Digital — Conteúdo Prático e Atual</h1>
+        <p>Guia, estratégias e ferramentas para você crescer online — conteúdo direto, atualizado e aplicável.</p>
       </div>
     </section>
 
-    <section class="search-bar container">
-      <input id="search" placeholder="Pesquisar posts..." aria-label="Pesquisar posts">
-    </section>
+    <section class="container latest-posts">
+      <h2>Últimos posts</h2>
 
-    <section class="posts container" id="posts">
-      <!-- cards gerados por script.js -->
+      <div class="posts-grid">
+        <article class="post-card">
+          <a href="posts/post1.html">
+            <img src="assets/marketing-digital-banner.jpg" alt="Marketing Digital">
+            <h3>Marketing Digital: O Guia Completo</h3>
+            <p>Entenda os pilares do marketing digital: SEO, conteúdo, redes sociais, tráfego pago e automação.</p>
+          </a>
+        </article>
+
+        <article class="post-card">
+          <a href="posts/post2.html">
+            <img src="assets/site-profissional.jpg" alt="Criar site profissional">
+            <h3>Como Criar uma Estratégia de Marketing Digital do Zero</h3>
+            <p>Passo a passo para definir objetivos, público, canais e métricas — plano prático para começar.</p>
+          </a>
+        </article>
+
+        <article class="post-card">
+          <a href="posts/post3.html">
+            <img src="assets/ferramentas-mkt-digital.jpg" alt="Ferramentas marketing">
+            <h3>As Melhores Ferramentas de Marketing Digital para 2025</h3>
+            <p>Ferramentas recomendadas por profissionais para SEO, criação de conteúdo, automação e anúncios.</p>
+          </a>
+        </article>
+      </div>
+
+      <div class="more-link">
+        <a href="posts.html" class="btn">Ver todos os posts</a>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Blog de Marketing Digital — Feito com ♥</p>
+      <p>© <span id="year"></span> Meu Blog — Marketing Digital</p>
     </div>
   </footer>
 
