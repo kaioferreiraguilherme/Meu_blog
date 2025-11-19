@@ -3,35 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sobre — Blog de Marketing Digital</title>
-  <meta name="description" content="Conheça o blog e a missão de compartilhar marketing prático." />
+  <title>Sobre — Meu Blog</title>
+  <meta name="description" content="Sobre o blog e a missão de compartilhar marketing prático." />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><strong>Blog de</strong><span> Marketing</span></a>
-      <nav class="nav">
+      <a class="brand" href="index.html"><strong>Meu</strong> Blog</a>
+      <nav id="nav" class="nav">
         <a href="index.html">Home</a>
+        <a href="posts.html">Posts</a>
         <a href="sobre.html" class="active">Sobre</a>
         <a href="contato.html">Contato</a>
       </nav>
-      <button class="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      <button id="burger3" class="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <main class="container page-container">
     <h1>Sobre este blog</h1>
-    <p>Este blog foi criado para ajudar profissionais e empreendedores a entender e aplicar marketing digital com práticas simples e objetivas.</p>
+    <p>Este blog foi criado para compartilhar conhecimento prático sobre marketing digital. Aqui você encontrará guias, estratégias e recomendações de ferramentas — tudo explicado de forma objetiva para aplicar imediatamente.</p>
 
     <h3>Missão</h3>
-    <p>Compartilhar conteúdo prático para aumentar visibilidade, tráfego e conversões.</p>
+    <p>Transformar conceitos complexos em ações práticas para profissionais, autônomos e pequenas empresas que desejam crescer na internet.</p>
   </main>
 
   <footer class="site-footer">
-    <div class="container"><p>© <span id="year-sobre"></span> Blog de Marketing Digital</p></div>
+    <div class="container"><p>© <span id="year-sobre"></span> Meu Blog</p></div>
   </footer>
 
   <script>document.getElementById('year-sobre').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
 </body>
 </html>
