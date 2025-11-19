@@ -1,50 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Artigo sobre marketing digital.">
-    <title>O que é Marketing Digital? | Blog</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Posts — Meu Blog</title>
+  <meta name="description" content="Lista de artigos do blog de marketing digital." />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <div class="container header-container">
-        <h1>Blog de Marketing Digital</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><strong>Meu</strong> Blog</a>
+      <nav id="nav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="posts.html" class="active">Posts</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <button id="burger2" class="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
     </div>
-</header>
+  </header>
 
-<main class="post-content">
-    <div class="container">
-        <article>
-            <h2>O que é Marketing Digital?</h2>
-            <p>O marketing digital é o conjunto de estratégias usadas para promover produtos e serviços no ambiente online...</p>
-            <p>Seu objetivo é alcançar o público certo no momento certo, utilizando ferramentas como SEO, redes sociais, anúncios pagos e muito mais.</p>
-            <p>Continue lendo e descubra como aplicar isso no seu negócio!</p>
-        </article>
+  <main class="container posts-list-page">
+    <h1>Todos os posts</h1>
+
+    <div class="posts-list">
+      <article class="list-item">
+        <h2><a href="posts/post1.html">Marketing Digital: O Guia Completo</a></h2>
+        <p>Descrição: Pilares, benefícios e como começar na prática com SEO, conteúdo e anúncios.</p>
+      </article>
+
+      <article class="list-item">
+        <h2><a href="posts/post2.html">Como Criar uma Estratégia de Marketing Digital do Zero</a></h2>
+        <p>Descrição: Planejamento passo a passo para montar uma estratégia com objetivos, públicos e canais.</p>
+      </article>
+
+      <article class="list-item">
+        <h2><a href="posts/post3.html">As Melhores Ferramentas de Marketing Digital para 2025</a></h2>
+        <p>Descrição: Ferramentas para SEO, criação, automação e análise — recomendações reais de profissionais.</p>
+      </article>
     </div>
-</main>
+  </main>
 
-<button class="back-to-top" id="backToTopBtn">↑</button>
+  <footer class="site-footer">
+    <div class="container"><p>© <span id="year-posts"></span> Meu Blog</p></div>
+  </footer>
 
-<footer id="contato">
-    <div class="container">
-        <p>&copy; 2025 Blog de Marketing Digital</p>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-        </div>
-    </div>
-</footer>
-
-<script src="assets/js/script.js"></script>
+  <script>document.getElementById('year-posts').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
 </body>
 </html>
